@@ -6,11 +6,12 @@ import './App.css';
 class App extends Component {
 
   onIOSClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/01251404/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/04282302/cceos.plist';
   }
 
   onAndroidClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/04041423/cceos.apk';
+    // window.location.href = 'https://net.huanmusic.com/eos/app/04041423/cceos.apk';
+    alert('暂无Test环境android版');
   }
 
   render() {
@@ -23,7 +24,7 @@ class App extends Component {
           */}
           <div className="eos-logo" alt="logo" />
           
-          <span className="eos-title">升腾雨滴</span>
+          <span className="eos-title">升腾雨滴内部用Test环境</span>
           <div onClick={this.onIOSClickHandle}  className="eos-button eos-ios" />
           <div onClick={this.onAndroidClickHandle} className="eos-button eos-android" />
           <div className="eos-img" alt="eos-img" />
