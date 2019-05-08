@@ -103,3 +103,23 @@
           font-size: 18px;
           font-weight: bold;
 }
+
+.update-button {
+  margin-top: 20px;
+  width: 440px;
+  height: 80px;
+  border-radius: 40px;
+  line-height: 80px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.update-ios {
+  background: #4d9ef9;
+  color: #ffffff;
+}
+
+.update-android {
+  background: #ffffff;
+  color: #4d9ef9;
+}
