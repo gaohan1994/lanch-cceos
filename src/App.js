@@ -5,19 +5,20 @@ import './App.css';
 
 class App extends Component {
 
-  onTestIOSProductionClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/01251404/cceos.plist';
-  }
-
-  onTextAndroidProductionClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/05081157/cceos.apk';
-  }
 
   onDevIOSStaingClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/01251404/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05101826/cceos.plist';
   }
 
   onDevAndroidStaingClickHandle = () => {
+    window.location.href = 'https://net.huanmusic.com/eos/app/05081157/cceos-dev.apk';
+  }
+
+  onTestIOSProductionClickHandle = () => {
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/04282302/cceos.plist';
+  }
+
+  onTestAndroidProductionClickHandle = () => {
     window.location.href = 'https://net.huanmusic.com/eos/app/05081157/cceos.apk';
   }
 
@@ -25,28 +26,21 @@ class App extends Component {
     return (
       <div className="App">
         <div className="wrapper">
-          {/** 
-          <img className="eos-logo" alt="logo" src="//net.huanmusic.com/eos/lanch/logo.png"/>
-          <img className="eos-img" alt="eos-img" src="//net.huanmusic.com/eos/lanch/img_jifen.png" />
-          */}
           <div className="eos-logo" alt="logo" />
           
           <span className="eos-title">升腾雨滴</span>
-          {/**
-          <div onClick={this.onIOSClickHandle}  className="eos-button eos-ios" />
-          <div onClick={this.onAndroidClickHandle} className="eos-button eos-android" />
-          */}
-          <div className="update-button update-ios">
+
+          <div onClick={this.onDevIOSStaingClickHandle} className="update-button update-ios">
             测试环境iOS下载
           </div>
-          <div className="update-button update-android">
+          <div onClick={this.onDevAndroidStaingClickHandle} className="update-button update-android">
             测试环境Android下载
           </div>
 
-          <div className="update-button update-ios" style={{marginTop: '40px'}}>
+          <div onClick={this.onTestIOSProductionClickHandle} className="update-button update-ios" style={{marginTop: '40px'}}>
             内部生产环境iOS下载
           </div>
-          <div className="update-button update-android">
+          <div onClick={this.onTestAndroidProductionClickHandle} className="update-button update-android">
             内部生产环境Android下载
           </div>
 
