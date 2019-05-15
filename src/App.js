@@ -1,14 +1,63 @@
 import React, { Component } from 'react';
 import './App.css';
 
+export function isAndroid () {
+  let u = navigator.userAgent;
+  let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+  
+  return isAndroid;
+}
+
+export function isWeiXin () {
+  //window.navigator.userAgent属性包含了浏览器类型、版本、操作系统类型、浏览器引擎类型等信息，这个属性可以用来判断浏览器类型
+  let ua = window.navigator.userAgent.toLowerCase();
+  //通过正则表达式匹配ua中是否含有MicroMessenger字符串
+  // eslint-disable-next-line
+  if (ua.match(/MicroMessenger/i) == "micromessenger"){
+    return true;
+  } else {
+    return false;
+  }
+}
+
 class App extends Component {
 
+  componentDidMount() {
+    const weixinToken = isWeiXin();
+    console.log('weixinToken: ', weixinToken);
+    const androidToken = isAndroid();
+    console.log('androidToken: ', androidToken);
+    
+    if (weixinToken === true) {
+      /**
+       * [是微信，判断是否是安卓如果是安卓则提醒用户浏览器打开]
+       */
+
+      if (androidToken === true) {
+        /**
+         * [微信&&安卓则提醒用户去浏览器]
+         */
+        alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
+      }
+    }
+  }
+
   onIOSClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/05131931/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/05141523/cceos.plist';
   }
 
   onAndroidClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/production/05131931/cceos-release.apk';
+    const weixinToken = isWeiXin();
+    const androidToken = isAndroid();
+
+    if (weixinToken === true && androidToken && true) {
+      /**
+       * [按桌且是微信]
+       */
+      alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
+    } else {
+      window.location.href = 'https://net.huanmusic.com/eos/production/05141847/cceos-release.apk';
+    }
   }
 
   render() {
