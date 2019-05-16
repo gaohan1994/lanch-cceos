@@ -7,7 +7,7 @@ class App extends Component {
 
 
   onDevIOSStaingClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05101826/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05152041/cceos.plist';
   }
 
   onDevAndroidStaingClickHandle = () => {
