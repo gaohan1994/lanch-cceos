@@ -15,11 +15,11 @@ class App extends Component {
   }
 
   onTestIOSProductionClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/04282302/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/test/05191147/cceos.plist';
   }
 
   onTestAndroidProductionClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/05081157/cceos.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/test/05191147/cceos-test-release.apk';
   }
 
   render() {
