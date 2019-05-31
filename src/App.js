@@ -7,19 +7,19 @@ class App extends Component {
 
 
   onDevIOSStaingClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05152041/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05301621/cceos.plist';
   }
 
   onDevAndroidStaingClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/05081157/cceos-dev.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/app/05311014/app-release.apk';
   }
 
   onTestIOSProductionClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/test/05191147/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/test/05301917/cceos.plist';
   }
 
   onTestAndroidProductionClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/test/05191147/cceos-test-release.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/test/05311014/app-release.apk';
   }
 
   render() {
