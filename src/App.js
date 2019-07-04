@@ -23,6 +23,7 @@ export function isWeiXin () {
 class App extends Component {
 
   componentDidMount() {
+    // window.location.reload();
     const weixinToken = isWeiXin();
     console.log('weixinToken: ', weixinToken);
     const androidToken = isAndroid();
@@ -43,7 +44,8 @@ class App extends Component {
   }
 
   onIOSClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/06061647/cceos.plist';
+    // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/06061647/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07011358/cceos.plist';
   }
 
   onAndroidClickHandle = () => {
@@ -56,7 +58,8 @@ class App extends Component {
        */
       alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
     } else {
-      window.location.href = 'https://net.huanmusic.com/eos/production/06061647/app-release.apk';
+      // window.location.href = 'https://net.huanmusic.com/eos/production/06061647/app-release.apk';
+      window.location.href = 'https://net.huanmusic.com/eos/app/07011358/app-release.apk';
     }
   }
 
