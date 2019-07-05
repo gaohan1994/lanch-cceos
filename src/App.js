@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   onTestIOSProductionClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/test/05301917/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07050934/cceos.plist';
   }
 
   onTestAndroidProductionClickHandle = () => {
@@ -34,15 +34,15 @@ class App extends Component {
   }
 
   onProIOS = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/06272012/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07051148/cceos.plist';
   }
 
   onProAndroid = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/06272012/app-release.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/app/07051148/app-release.apk';
   }
 
   render() {
-    const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
+    // const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
     return (
       <div className="App">
         <div className="wrapper">
@@ -50,24 +50,24 @@ class App extends Component {
           
           <span className="eos-title">升腾雨滴</span>
 
-          <a href={`cceos://${hrefParams}`}>
+          {/* <a href={`cceos://${hrefParams}`}>
             <div className="update-button update-ios">
               测试打开app
             </div>
-          </a>
+          </a> */}
 
-          <div onClick={this.onDevIOSStaingClickHandle} className="update-button update-ios">
+          {/* <div onClick={this.onDevIOSStaingClickHandle} className="update-button update-ios">
             测试环境iOS下载
           </div>
           <div onClick={this.onDevAndroidStaingClickHandle} className="update-button update-android">
             测试环境Android下载
-          </div>
+          </div> */}
 
           <div onClick={this.devIosPackage2} className="update-button update-ios">
-            测试环境新版固件iOS下载
+            测试环境iOS下载
           </div>
           <div onClick={this.devAndroidPackage2} className="update-button update-android">
-            测试环境新版固件Android下载
+            测试环境Android下载
           </div>
 
           
