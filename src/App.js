@@ -42,7 +42,7 @@ class App extends Component {
   }
 
   render() {
-    // const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
+    const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
     return (
       <div className="App">
         <div className="wrapper">
@@ -50,11 +50,11 @@ class App extends Component {
           
           <span className="eos-title">升腾雨滴</span>
 
-          {/* <a href={`cceos://${hrefParams}`}>
+          <a href={`cceos://${hrefParams}`}>
             <div className="update-button update-ios">
               测试打开app
             </div>
-          </a> */}
+          </a>
 
           {/* <div onClick={this.onDevIOSStaingClickHandle} className="update-button update-ios">
             测试环境iOS下载
