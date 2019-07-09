@@ -45,7 +45,7 @@ class App extends Component {
 
   onIOSClickHandle = () => {
     // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/06061647/cceos.plist';
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07081241/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07081446/cceos.plist';
   }
 
   onAndroidClickHandle = () => {
@@ -59,7 +59,7 @@ class App extends Component {
       alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
     } else {
       // window.location.href = 'https://net.huanmusic.com/eos/production/06061647/app-release.apk';
-      window.location.href = 'https://net.huanmusic.com/eos/app/07081241/app-release.apk';
+      window.location.href = 'https://net.huanmusic.com/eos/app/07081446/app-release.apk';
     }
   }
 
