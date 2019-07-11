@@ -13,15 +13,14 @@ class Packet extends Component {
   }
 
   componentDidMount() {
-    const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
-    window.location.href = `cceos://${hrefParams}`;
+    console.log('this.props;', this.props);
   }
 
   render() {
     return (
       <div className="App">
         <span>
-          test open app
+          
         </span>
       </div>
     );

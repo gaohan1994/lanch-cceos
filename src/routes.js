@@ -15,7 +15,7 @@ const MyRoute = () => {
         <Route exact path="/" component={App} />
         <Route exact path="/imageserver/apk/build/index.html" component={App} />
         <Route exact path="/packet" component={Packet} />
-        <Route exact path="/imageserver/apk/build/index.html/packet" component={Packet} />
+        <Route exact path="/bonus/:token/:bonusno/:bonustoken" component={Packet} />
         <Route component={App} />
       </Switch>
     </BrowserRouter>
