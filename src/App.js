@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   onTestAndroidProductionClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/test/05311014/app-release.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/app/07241058/app-releaseTest.apk';
   }
 
   devIosPackage2 = () => {
@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     // const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
-    const hrefParams = '';
+    // const hrefParams = '';
     return (
       <div className="App">
         <div className="wrapper">
@@ -51,11 +51,11 @@ class App extends Component {
           
           <span className="eos-title">升腾雨滴</span>
 
-          <a href={`cceos://${hrefParams}`}>
+          {/* <a href={`cceos://${hrefParams}`}>
             <div className="update-button update-ios">
               测试打开app
             </div>
-          </a>
+          </a> */}
 
           {/* <div onClick={this.onDevIOSStaingClickHandle} className="update-button update-ios">
             测试环境iOS下载
@@ -78,14 +78,6 @@ class App extends Component {
           <div onClick={this.onTestAndroidProductionClickHandle} className="update-button update-android">
             内部生产环境Android下载
           </div>
-
-          <div onClick={this.onProIOS} className="update-button update-ios" style={{marginTop: '40px'}}>
-            生产环境iOS下载
-          </div>
-          <div onClick={this.onProAndroid} className="update-button update-android">
-            生产环境Android下载
-          </div>
-         
           <div className="eos-img" alt="eos-img" />
         </div>
       </div>
