@@ -42,8 +42,6 @@ class App extends Component {
   }
 
   render() {
-    // const hrefParams = encodeURIComponent('transfer>receiveUser=gaohan111111&sendUser=gaohan123456');
-    // const hrefParams = '';
     return (
       <div className="App">
         <div className="wrapper">
