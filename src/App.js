@@ -34,18 +34,24 @@ class App extends Component {
        * [是微信，判断是否是安卓如果是安卓则提醒用户浏览器打开]
        */
 
-      if (androidToken === true) {
-        /**
-         * [微信&&安卓则提醒用户去浏览器]
-         */
-        alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
-      }
+      // if (androidToken === true) {
+      //   /**
+      //    * [微信&&安卓则提醒用户去浏览器]
+      //    */
+      //   alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
+      // }
+      alert('请使用浏览器打开本页面下载雨滴App');
     }
   }
 
   onIOSClickHandle = () => {
     // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/production/06061647/cceos.plist';
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07081446/cceos.plist';
+    const weixinToken = isWeiXin();
+    if (weixinToken === true) {
+      alert('请使用浏览器打开本页面下载雨滴App!')
+    } else {
+      window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/08161224/cceos.plist';
+    }
   }
 
   onAndroidClickHandle = () => {
@@ -59,7 +65,7 @@ class App extends Component {
       alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
     } else {
       // window.location.href = 'https://net.huanmusic.com/eos/production/06061647/app-release.apk';
-      window.location.href = 'https://net.huanmusic.com/eos/app/07081446/app-release.apk';
+      window.location.href = 'https://net.huanmusic.com/eos/app/08161224/app-release.apk';
     }
   }
 
