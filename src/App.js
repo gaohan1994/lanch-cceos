@@ -28,7 +28,7 @@ class App extends Component {
     window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/06121650/cceos.plist';
   }
   devAndroidPackage2 = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/06271201/app-release.apk';
+    window.location.href = 'https://net.huanmusic.com/cceos/app/08211349/app-releaseStaging.apk';
   }
 
   openUrl = () => {
@@ -36,11 +36,11 @@ class App extends Component {
   }
 
   onProIOS = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07051148/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/08161224/cceos.plist';
   }
 
   onProAndroid = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/07051148/app-release.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/app/08161224/app-release.apk';
   }
 
   render() {
