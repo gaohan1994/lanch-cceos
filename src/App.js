@@ -18,6 +18,7 @@ class App extends Component {
 
   onTestIOSProductionClickHandle = () => {
     window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07050934/cceos.plist';
+    // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09041050/cceos.plist';
   }
 
   onTestAndroidProductionClickHandle = () => {
@@ -36,7 +37,7 @@ class App extends Component {
   }
 
   onProIOS = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/08161224/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09041000/cceos.plist';
   }
 
   onProAndroid = () => {
@@ -70,6 +71,11 @@ class App extends Component {
                 </div>
                 <div onClick={this.onTestAndroidProductionClickHandle} className="update-button update-android">
                   内部生产环境Android下载
+                </div>
+
+
+                <div onClick={this.onProIOS} className="update-button update-ios" style={{marginTop: '40px'}}>
+                  生产环境iOS下载
                 </div>
               </div> 
             )
