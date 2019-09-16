@@ -50,7 +50,7 @@ class App extends Component {
     if (weixinToken === true) {
       alert('请使用浏览器打开本页面下载雨滴App!')
     } else {
-      window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09031614/cceos.plist';
+      window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09121736/cceos.plist';
     }
   }
 
@@ -65,7 +65,7 @@ class App extends Component {
       alert('安卓用户下载雨滴App请使用浏览器打开本页面！');
     } else {
       // window.location.href = 'https://net.huanmusic.com/eos/production/06061647/app-release.apk';
-      window.location.href = 'https://net.huanmusic.com/eos/app/09031614/app-release.apk';
+      window.location.href = 'https://net.huanmusic.com/eos/app/09121736/app-release.apk';
     }
   }
 
