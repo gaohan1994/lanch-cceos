@@ -26,7 +26,8 @@ class App extends Component {
   }
 
   devIosPackage2 = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/06121650/cceos.plist';
+    // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/06121650/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09170936/cceos.plist';
   }
   devAndroidPackage2 = () => {
     window.location.href = 'https://net.huanmusic.com/cceos/app/08211349/app-releaseStaging.apk';
