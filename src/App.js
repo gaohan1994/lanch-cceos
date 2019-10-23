@@ -7,15 +7,6 @@ const production = process.env.NODE_ENV === 'production' ? true : false;
 
 class App extends Component {
 
-
-  onDevIOSStaingClickHandle = () => {
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/05301621/cceos.plist';
-  }
-
-  onDevAndroidStaingClickHandle = () => {
-    window.location.href = 'https://net.huanmusic.com/eos/app/05311014/app-release.apk';
-  }
-
   onTestIOSProductionClickHandle = () => {
     window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/07050934/cceos.plist';
     // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09041050/cceos.plist';
@@ -27,10 +18,12 @@ class App extends Component {
 
   devIosPackage2 = () => {
     // window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/06121650/cceos.plist';
-    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/09170936/cceos.plist';
+    window.location.href = 'itms-services:///?action=download-manifest&url=https://net.huanmusic.com/eos/app/10231040/cceos.plist';
+    // 10231607
   }
   devAndroidPackage2 = () => {
-    window.location.href = 'https://net.huanmusic.com/cceos/app/08211349/app-releaseStaging.apk';
+    window.location.href = 'https://net.huanmusic.com/eos/app/10231040/app-releaseStaging.apk';
+    //10231607
   }
 
   openUrl = () => {
@@ -52,7 +45,7 @@ class App extends Component {
           <div className="eos-logo" alt="logo" />
           <span className="eos-title">升腾雨滴</span>
           {
-            production === true ? (
+            false ? (
               <div>
                 <div onClick={this.onProIOS} className="eos-button eos-ios" />
                 <div onClick={this.onProAndroid} className="eos-button eos-android" />
